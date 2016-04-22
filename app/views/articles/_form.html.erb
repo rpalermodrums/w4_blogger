@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <%= form_for(@article, html: {multipart: true}) do |f| %>
+=======
+<%= form_for(@article) do |f| %>
+>>>>>>> ca7ea04cfe9137239a75319f042562b9e0aca2ad
   <ul>
     <% @article.errors.full_messages.each do |error| %>
       <li><%= error %></li>
@@ -9,14 +13,18 @@
     <%= f.text_field :title %>
   </p>
   <p>
+<<<<<<< HEAD
     <%= f.label :tag_list  %><br />
     <%= f.text_field :tag_list %>
   </p>
   <p>
+=======
+>>>>>>> ca7ea04cfe9137239a75319f042562b9e0aca2ad
     <%= f.label :body %><br />
     <%= f.text_area :body %>
   </p>
   <p>
+<<<<<<< HEAD
     <% if @article.image.exists? %>
       <%= image_tag @article.image.url %><br />
     <% end %>
@@ -24,6 +32,8 @@
     <%= f.file_field :image %>
   </p>
   <p>
+=======
+>>>>>>> ca7ea04cfe9137239a75319f042562b9e0aca2ad
     <%= f.submit %>
   </p>
 <% end %>
